@@ -18,7 +18,7 @@ class App extends React.Component {
       <div className="App">
         <Router history={history}>
           <Switch>
-            <Route path="/Dashboard/UserDetails" component={UserDetails} />
+            <PrivateRoute path="/Dashboard/UserDetails" component={UserDetails} />
             <PublicRoute
               restricted={true}
               component={Signup}
